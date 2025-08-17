@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 
 env:
-  IMAGE_NAME: nextjs-portfolio
+  IMAGE_NAME: portfolio
 
 jobs:
   deploy:
@@ -40,8 +40,8 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.PORT || 22 }}
         script: |
-          docker stop nextjs-portfolio || true
-          docker rm nextjs-portfolio || true
+          docker stop portfolio || true
+          docker rm portfolio || true
           docker pull ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-          docker run -d --name nextjs-portfolio -p 3000:3000 --restart unless-stopped ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+          docker run -d --name portfolio -p 3000:3000 --restart unless-stopped ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
           docker image prune -f
