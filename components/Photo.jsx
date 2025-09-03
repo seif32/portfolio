@@ -22,8 +22,7 @@ function Photo() {
           className="w-[298px] h-[298px] xl:h-[498px] xl:w-[498px] absolute"
         >
           <Image
-            // src={"/file.svg"}
-            src={""}
+            src={"/assets/home/me.svg"}
             priority
             quality={100}
             fill
