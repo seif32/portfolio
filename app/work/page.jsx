@@ -1,6 +1,6 @@
 "use client";
 
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,9 +8,23 @@ import "swiper/css";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaFlutter } from "react-icons/fa6";
+import { GrMysql } from "react-icons/gr";
+import { RiSupabaseFill } from "react-icons/ri";
 
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import {
+  SiFigma,
+  SiFirebase,
+  SiMysql,
+  SiNextdotjs,
+  SiReacthookform,
+  SiReactquery,
+  SiShadcnui,
+  SiSpringboot,
+  SiStyledcomponents,
+  SiTailwindcss,
+} from "react-icons/si";
 
 import {
   Tooltip,
@@ -26,89 +40,106 @@ import WorkerSliderBtns from "@/components/WorkerSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "Ford Saas",
+    category: "Frontend + UI/UX",
+    title: "Ford Vehicle Management SaaS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+      "A comprehensive multi-role platform developed during my part-time job at Sobek, deployed to Ford South Africa. This enterprise-grade application streamlines automotive service center operations with role-based workflows for Finance Officers, Foremen, Service Advisors, Managers, and Technicians. Features include real-time task management, inventory tracking, invoice generation, and complete vehicle lifecycle management from intake to final handover.",
     stack: [
-      { name: "Html 5", icon: <FaHtml5 /> },
-      { name: "Css 3", icon: <FaCss3 /> },
+      { name: "React Native", icon: <FaReact /> },
       { name: "Javascript", icon: <FaJs /> },
+      { name: "Firebase", icon: <SiFirebase /> },
+      { name: "React Hook Form", icon: <SiReacthookform /> },
+      { name: "React Query", icon: <SiReactquery /> },
+      { name: "Figma", icon: <SiFigma /> },
     ],
-    image: "/assets/work/ford.avif",
+    image: "/assets/work/ford-sm.png",
     live: "",
     github: "",
   },
   {
     num: "02",
-    category: "frontend",
-    title: "",
+    category: "frontend + UI/UX",
+    title: "EMA Financial Platform Landing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+      "A modern, high-conversion landing page developed for Sobek to showcase their EMA fintech platform. This project demonstrates advanced UI/UX design aligned with industry standards, featuring smooth animations, responsive design, and strategic conversion optimization. The landing effectively presents EMA's comprehensive financial ecosystem including digital wallets, cross-border transfers, and SMME solutions targeting Africa's unbanked population.",
     stack: [
       { name: "React", icon: <FaReact /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
       { name: "Javascript", icon: <FaJs /> },
+      { name: "Figma", icon: <SiFigma /> },
+      { name: "ShadcnUI", icon: <SiShadcnui /> },
     ],
     image: "/assets/work/ema.avif",
-    live: "",
-    github: "",
+    live: "https://ema.emalyami.com/",
+    github: "https://github.com/seif32/ema-landing",
   },
+
   {
     num: "03",
     category: "fullstack",
-    title: "",
+    title: "Property Finder Platform",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+      "A comprehensive real estate platform featuring multi-role architecture with distinct user experiences for guests, normal users, agents, and administrators. Built with robust role-based access control, the system handles property listings, advanced search functionality, bookmarking, reviews, and location hierarchy management. Features include property image management, user authentication, secure data validation, and complete CRUD operations for all entities.",
     stack: [
-      { name: "Next.js", icon: <SiNextdotjs /> },
       { name: "React", icon: <FaReact /> },
-      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Spring Boot", icon: <SiSpringboot /> },
+      { name: "Firebase", icon: <SiFirebase /> },
+      { name: "Javascript", icon: <FaJs /> },
+      { name: "TailwindCSS", icon: <SiTailwindcss /> },
+      { name: "React Hook Form", icon: <SiReacthookform /> },
+      { name: "React Query", icon: <SiReactquery /> },
     ],
     image: "/assets/work/prop-finder.avif",
     live: "",
-    github: "",
+    github: "https://github.com/seif32/react-property-finder",
   },
+
   {
     num: "04",
     category: "fullstack",
-    title: "",
+    title: "Hedieaty Gift Management App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+      "A comprehensive mobile gift management platform built with Flutter, enabling users to create and share wish lists for special occasions. Features include real-time gift pledging, offline-first architecture with SQLite, and cloud synchronization via Firebase. The app supports multi-user interactions where friends and family can view and pledge gifts, with secure authentication and cross-device data syncing for seamless gift-giving coordination.",
     stack: [
-      { name: "Next.js", icon: <SiNextdotjs /> },
-      { name: "React", icon: <FaReact /> },
-      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Flutter", icon: <FaFlutter /> },
+      { name: "Firebase", icon: <SiFirebase /> },
+      { name: "SQLite", icon: <GrMysql /> },
     ],
     image: "/assets/work/hedieaty.avif",
     live: "",
-    github: "",
+    github: "https://github.com/seif32/flutter-gift-management",
   },
+
   {
     num: "05",
     category: "fullstack",
-    title: "",
+    title: "Roomify Hotel Management System",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+      "A comprehensive hotel management platform featuring an internal management app for hotel staff. Built with modern React.js frontend and Supabase backend-as-a-service, the system provides real-time room availability, booking management, guest profiles, and automated staff workflows. Features include seamless data synchronization between platforms, and scalable architecture designed to grow from boutique hotels to larger properties.",
     stack: [
-      { name: "Next.js", icon: <SiNextdotjs /> },
       { name: "React", icon: <FaReact /> },
-      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Supabase", icon: <RiSupabaseFill /> },
+      { name: "Javascript", icon: <FaJs /> },
+      { name: "React Query", icon: <SiReactquery /> },
+      { name: "Styled Components", icon: <SiStyledcomponents /> },
     ],
     image: "/assets/work/roomify.avif",
     live: "",
-    github: "",
+    github: "https://github.com/seif32/react-hotel-system",
   },
+
   {
     num: "06",
-    category: "fullstack",
+    category: "Frontend + UI/UX",
     title: "",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+    description: "Soon",
     stack: [
-      { name: "Next.js", icon: <SiNextdotjs /> },
       { name: "React", icon: <FaReact /> },
-      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Firebase", icon: <SiFirebase /> },
+      { name: "Javascript", icon: <FaJs /> },
+      { name: "TailwindCSS", icon: <SiTailwindcss /> },
+      { name: "React Hook Form", icon: <SiReacthookform /> },
+      { name: "React Query", icon: <SiReactquery /> },
     ],
     image: "/assets/work/tag.avif",
     live: "",
@@ -130,7 +161,7 @@ function Work() {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
       }}
       className="flex flex-col justify-center py-12 px-12 xl:px-0"
     >
@@ -167,33 +198,38 @@ function Work() {
                 })}
               </ul>
 
-              <div className="border border-white/20"></div>
-              <div className="flex items-center gap-4">
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live Project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repo</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+              {project.github !== "" && project.live !== "" && (
+                <div className="border border-white/20"></div>
+              )}
+              <div className="flex items-center gap-4 ">
+                {project.live !== "" && (
+                  <Link href={project.live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live Project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+                {project.github !== "" && (
+                  <Link href={project.github}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repo</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -207,22 +243,20 @@ function Work() {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full  ">
-                    <div className="h-[460px] w-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={project.image}
-                          fill
-                          className="object-cover w-full h-full"
-                          alt=""
-                        />
-                      </div>
+                    <div className="w-[460px] h-[460px]">
+                      <Image
+                        src={project.image}
+                        fill
+                        className="object-contain w-full h-full"
+                        alt=""
+                      />
                     </div>
                   </SwiperSlide>
                 );
               })}
               <WorkerSliderBtns
                 containerStyles={
-                  "flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-10 z-20 w-full justify-between xl:w-max xl:justify-none "
+                  "flex gap-2 absolute right-0  bottom-0 z-20 w-full justify-between w-max justify-none "
                 }
                 btnStyles={
                   "bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all "

@@ -28,10 +28,6 @@ const links = [
     name: "work",
     path: "/work",
   },
-  {
-    name: "contact",
-    path: "/contact",
-  },
 ];
 
 function MobileNav() {

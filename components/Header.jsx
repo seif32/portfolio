@@ -16,8 +16,8 @@ function Header() {
         {/* desktop nav & hire me button */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href={"/contact"}>
-            <Button className={""}>Hire me</Button>
+          <Link href={"/work"}>
+            <Button className={""}>Work</Button>
           </Link>
         </div>
 

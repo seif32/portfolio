@@ -16,14 +16,14 @@ const links = [
     name: "resume",
     path: "/resume",
   },
-  {
-    name: "work",
-    path: "/work",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
+  // {
+  //   name: "work",
+  //   path: "/work",
+  // },
+  // {
+  //   name: "contact",
+  //   path: "/contact",
+  // },
 ];
 
 function Nav() {
