@@ -27,7 +27,7 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "",
+    title: "Ford Saas",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
     stack: [
@@ -35,7 +35,7 @@ const projects = [
       { name: "Css 3", icon: <FaCss3 /> },
       { name: "Javascript", icon: <FaJs /> },
     ],
-    image: "/",
+    image: "/assets/work/ford.avif",
     live: "",
     github: "",
   },
@@ -50,7 +50,7 @@ const projects = [
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
       { name: "Javascript", icon: <FaJs /> },
     ],
-    image: "/",
+    image: "/assets/work/ema.avif",
     live: "",
     github: "",
   },
@@ -65,7 +65,52 @@ const projects = [
       { name: "React", icon: <FaReact /> },
       { name: "Node.js", icon: <FaNodeJs /> },
     ],
-    image: "/",
+    image: "/assets/work/prop-finder.avif",
+    live: "",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "fullstack",
+    title: "",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+    stack: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "React", icon: <FaReact /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+    ],
+    image: "/assets/work/hedieaty.avif",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "fullstack",
+    title: "",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+    stack: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "React", icon: <FaReact /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+    ],
+    image: "/assets/work/roomify.avif",
+    live: "",
+    github: "",
+  },
+  {
+    num: "06",
+    category: "fullstack",
+    title: "",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas, beatae nisi reiciendis quaerat dolor nesciunt architecto soluta placeat iure",
+    stack: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "React", icon: <FaReact /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+    ],
+    image: "/assets/work/tag.avif",
     live: "",
     github: "",
   },
@@ -156,20 +201,18 @@ function Work() {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-full mb-12"
+              className="xl:h-full mb-12 "
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
                 return (
-                  <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-
+                  <SwiperSlide key={index} className="w-full  ">
+                    <div className="h-[460px] w-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-cover w-full h-full"
                           alt=""
                         />
                       </div>
@@ -179,7 +222,7 @@ function Work() {
               })}
               <WorkerSliderBtns
                 containerStyles={
-                  "flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none "
+                  "flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-10 z-20 w-full justify-between xl:w-max xl:justify-none "
                 }
                 btnStyles={
                   "bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all "
