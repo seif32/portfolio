@@ -78,26 +78,25 @@ const experience = {
   icon: "",
   title: "My experience",
   description:
-    "Frontend developer focused on user experience, clean code, and responsive React applications.",
+    "Software engineer focused on scalable web applications, enterprise systems, and modern frontend/backend development.",
   items: [
     {
-      company: " Sobek IT (Pty) Ltd",
-      position: "Frontend developer (Part-time)",
-      duration: " 2025 – Present",
+      company: "PwC",
+      position: "Software Engineer (Full-time)",
+      duration: "2026 – Present",
     },
     {
-      company: " Digital Agency",
-      position: " WordPress Designer",
-      duration: "2024",
+      company: "Sobek IT (Pty) Ltd",
+      position: "Frontend Engineer (Part-time)",
+      duration: "2025",
     },
     {
-      company: " Next Academy",
-      position: " Mobile Developer (Training)",
+      company: "Next Academy",
+      position: "Mobile Developer (Training)",
       duration: "2022",
     },
   ],
 };
-
 const about = {
   title: "About me",
   description:
@@ -113,7 +112,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "Fresh",
+      fieldValue: "Associate",
     },
     {
       fieldName: "Email",

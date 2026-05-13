@@ -28,9 +28,9 @@ const services = [
   },
   {
     num: "04",
-    title: "WordPress Designer",
+    title: "Shopify Developer",
     description:
-      "I design and customize WordPress sites using page builders and themes. Professional websites that are easy to manage, SEO-friendly, and visually stunning.",
+      "I build and customize Shopify stores with responsive storefronts, optimized user experience, and scalable e-commerce functionality. Experienced in theme customization, performance optimization, and integrating third-party apps.",
     href: "",
   },
 ];
