@@ -18,7 +18,7 @@ export default function Home() {
               I transform complex ideas into intuitive digital experiences that
               users actually enjoy using.
             </p>
-            <div className="flex flex-col xl:flex-row  items-center gap-8 ">
+            {/* <div className="flex flex-col xl:flex-row  items-center gap-8 ">
               <Button
                 variant="outline"
                 size="lg"
@@ -37,7 +37,7 @@ export default function Home() {
                   iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />

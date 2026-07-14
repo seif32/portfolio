@@ -81,7 +81,7 @@ const experience = {
     "Software engineer focused on scalable web applications, enterprise systems, and modern frontend/backend development.",
   items: [
     {
-      company: "PwC",
+      company: "Leading Tech Company",
       position: "Software Engineer (Full-time)",
       duration: "2026 – Present",
     },
@@ -106,18 +106,18 @@ const about = {
       fieldName: "Name",
       fieldValue: "Seif Mohamed",
     },
-    {
-      fieldName: "Phone",
-      fieldValue: "010 99 727 988",
-    },
+    // {
+    //   fieldName: "Phone",
+    //   fieldValue: "010 99 727 988",
+    // },
     {
       fieldName: "Experience",
       fieldValue: "Associate",
     },
-    {
-      fieldName: "Email",
-      fieldValue: "seifmohamed321432@gmail.com",
-    },
+    // {
+    //   fieldName: "Email",
+    //   fieldValue: "seifmohamed321432@gmail.com",
+    // },
     {
       fieldName: "Freelance",
       fieldValue: "Available",
